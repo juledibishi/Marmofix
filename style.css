@@ -1,0 +1,294 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	margin: 0 20px;
+}
+.description-one{
+	text-align:center;
+	background-color:#e0dddd;
+	font-size:40px;
+	border-radius:25px;
+	padding:15px;margin:15px;
+	font-family:'Baskerville Old Face';
+	color:red;
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 20px;
+}
+
+.navbar .menu {
+	margin: auto;
+	font-size: 20px;
+	display: inline;
+}
+
+.navbar .logo {
+	margin: auto;
+}
+
+.navbar a {
+	color: #8794a6;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navbar a:hover {
+	color: #5cb04c;
+}
+
+.home {
+	background-image: url(img/shtepia.jpg);
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.description-two {
+	color: white;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 200px;
+	padding: 50px;
+}
+
+.photo-text {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.photo {
+	padding: 55px;
+	margin-top: 100px;
+}
+
+.description-three {
+	padding: 10px;
+	margin-right: 50px;
+	background-color: #f4f7fc;
+	font-size: 20px;
+}
+
+.description-buckets {
+	display: grid;
+	grid-template-columns: 400px auto;
+}
+
+.description-four {
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	padding: 40px;
+	font-size: 19px;
+}
+
+.buckets {
+	background-color: #f4f7fc;
+	text-align: center;
+}
+
+.buckets img:hover {
+	transform: scale(1.2);
+}
+
+.buckets img {
+	transition: transform 0.5s;
+	width: 240px;
+	height: 220px;
+}
+
+.employment-current {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-items: center;
+}
+
+.current-offers {
+	padding: 70px;
+	margin: 50px;
+	background-color: #008e9f;
+	color: white;
+	border: 1px solid;
+	width: 370px;
+	height: 320px;
+}
+
+.employment {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.contact {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	background-color: #e7c8b6;
+	padding: 25px;
+	border-radius: 15px;
+}
+
+/*finished css for the Ballina*/
+
+.text-products {
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: #00859c;
+	padding: 40px;
+}
+
+.products {
+	font-size: 50px;
+	color: white;
+}
+
+.ballina a {
+	float: right;
+	text-decoration: none;
+	color: #c8dadb;
+}
+
+.ballina a:hover {
+	color: red;
+}
+
+.products-one {
+text-align: center;
+}
+
+.products-one img:hover {
+	transform: scale(1.2);
+}
+
+.products-one img {
+	transition: transform 0.5s;
+}
+
+/*finished css with production*/
+
+.around-us {
+	text-align: center;
+	color: white;
+	animation-name: example;
+	animation-duration: 10s;
+	animation-delay: -0.1s;
+	padding: 15px;
+	font-size: 25px;
+	border-radius: 50%;
+}
+
+@keyframes example {
+	0% {
+		background-color: #fdc310;
+		left: 0px;
+		top: 0px;
+	}
+	25% {
+		background-color: #ee5024;
+		left: 200px;
+		top: 0px;
+	}
+	50% {
+		background-color: #ca262e;
+		left: 200px;
+		top: 200px;
+	}
+	75% {
+		background-color: #962e47;
+		left: 0px;
+		top: 200px;
+	}
+	100% {
+		background-color: #1345bb;
+		left: 0px;
+		top: 0px;
+	}
+}
+
+/*pershkrimet TDS*/
+
+.buckets-description {
+	display: grid;
+	grid-template-columns: 450px auto;
+}
+
+.description {
+	text-align: center;
+}
+
+/*fillimi i css tek kontaktet*/
+
+.forms-input {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+}
+
+input {
+	margin-top: 5px;
+	width: 350px;
+	height: 45px;
+	border-radius: 5px;
+	
+	color: white;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.navbar {
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		margin: 15px;
+		justify-items: center;
+	}
+	.navbar img {
+		width: 200px;
+	}
+	.navbar .menu {
+		display: grid;
+		justify-items: center;
+		font-size: 25px;
+	}
+	.navbar a {
+		color: #8794a6;
+	}
+	.text-one{
+		margin: 0;
+	}
+	.photo-text {
+		grid-template-columns: auto;
+	}
+	.photo-text .photo {
+		padding: 0 !important;
+	}
+	.photo-text img {
+		width: 100% !important;
+	}
+	.text-products {
+		grid-template-columns: auto !important;
+	}
+	.employment-current {
+		grid-template-columns: auto !important;
+	}
+	.employment-current .current-offers {
+		margin: 0 !important;
+	}
+	.forms-input  {
+		grid-template-columns: auto !important;
+		justify-items: center;
+	}
+	.products{
+font-size: 25px;
+	}
+
+	.footer{
+	margin: 5px;
+	}
+}
